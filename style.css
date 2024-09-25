@@ -132,6 +132,9 @@
     position:fixed;
     width:100%;
   }
+  .header .header_nav ul li.active a{
+    color:var(--primary);
+  }
   .header .branding h3{
     color: var(--light);
     font-size: 2.5rem;
@@ -244,7 +247,7 @@
 .banner .banner_text{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  /* align-items:center; */
 
 }
 .banner .banner_text h1{
@@ -472,6 +475,158 @@ font-weight:600;
   }
 }
 
+/* ABT-BANNER */
+
+.abt-banner{
+  background:var(--light);
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+.abt-banner .abt-banner_wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.abt-banner .abt-banner_text{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+.abt-banner .abt-banner_text h1{
+  color:var(--primary);
+  font-size:8rem;
+  font-weight:800;
+  line-height:1;
+}
+.abt-banner .abt-banner_text p{
+  margin:4rem 0;
+  max-width:40rem;
+  text-align:justify;
+}
+
+
+/* ABT-BANNER */
+.abt-banner{
+  background:var(--light);
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+.abt-banner .banner_wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.abt-banner .abt-banner_text{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+.abt-banner .abt-banner_text h3{
+  padding-right:24rem;
+
+
+}
+.abt-banner .abt-banner_text h1{
+  color:var(--primary);
+  font-size:8rem;
+  font-weight:800;
+  line-height:1;
+  margin-bottom:3rem;
+}
+.abt-banner .abt-banner_text p{
+  margin:1rem 0;
+  max-width:40rem;
+  text-align:justify;
+}
+.abt-banner .abt-banner_text ul li a{
+  color:gray;
+  font-size:2rem;
+}
+.abt-banner .abt-banner_text ul{
+  display:flex;
+  gap:2rem;
+  padding-right:22rem;
+}
+
+@media screen and (max-width:500px){
+  .banner .banner_wrapper{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .banner img{
+    width:20rem;
+  }
+  .banner .banner_text {
+    text-align:center;
+  }
+  .banner .banner_text h1{
+    font-size:3rem;
+    margin-top:5rem;
+  }
+}
+
+/* RCNT-TRENDS */
+.rcnt-trends{
+  background:var(--dark);
+  padding:5rem 0;
+}
+.rcnt-trends .rcnt-trends_title h2{
+color:var(--primary);
+font-size:4rem;
+font-weight:600;
+}
+.rcnt-trends .rcnt-trends_title p{
+  color:var(--light);
+  font-size: 2.5rem;
+  font-weight:400rem;
+}
+.rcnt-trends .rcnt-trends_wrapper{
+  margin-top:7rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:5rem;
+}
+.rcnt-trends .rcnt-trends_card{
+  background:var(--light);
+  border-radius:2rem;
+}
+.rcnt-trends .rcnt-trends_card img{
+  width:100%
+}
+.rcnt-trends .rcnt-trends_text{
+  padding:3rem;
+}
+.rcnt-trends .rcnt-trends_text p{
+  margin-top:2rem;
+  margin-bottom:5rem;
+}
+.rcnt-trends .rcnt-trends_text h4{
+  color:var(--primary);
+  font-weight:600;
+}
+.rcnt-trends .rcnt-trends_text a{
+  color:var(--primary);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*REPEATABLE PATTERNS*/
 :root {
@@ -503,3 +658,5 @@ font-weight:600;
     background:var(--light);
     color:var(--dark);
   }
+
+  
