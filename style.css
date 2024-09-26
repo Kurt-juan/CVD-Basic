@@ -119,7 +119,7 @@
 
   /* CONTAINER */
   .container{
-    background: ;
+    /* background: ; */
     max-width:130rem; 
     margin:0 auto;
     padding: 1.5rem;
@@ -490,44 +490,8 @@ font-weight:600;
 .abt-banner .abt-banner_text{
   display:flex;
   flex-direction:column;
-  align-items:center;
-
-}
-.abt-banner .abt-banner_text h1{
-  color:var(--primary);
-  font-size:8rem;
-  font-weight:800;
-  line-height:1;
-}
-.abt-banner .abt-banner_text p{
-  margin:4rem 0;
-  max-width:40rem;
-  text-align:justify;
 }
 
-
-/* ABT-BANNER */
-.abt-banner{
-  background:var(--light);
-  padding-top:13rem;
-  padding-bottom:5rem;
-}
-.abt-banner .banner_wrapper{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-.abt-banner .abt-banner_text{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-
-}
-.abt-banner .abt-banner_text h3{
-  padding-right:24rem;
-
-
-}
 .abt-banner .abt-banner_text h1{
   color:var(--primary);
   font-size:8rem;
@@ -541,7 +505,7 @@ font-weight:600;
   text-align:justify;
 }
 .abt-banner .abt-banner_text ul li a{
-  color:gray;
+  color:var(--primary);
   font-size:2rem;
 }
 .abt-banner .abt-banner_text ul{
@@ -549,24 +513,49 @@ font-weight:600;
   gap:2rem;
   padding-right:22rem;
 }
+.abt-banner .abt-banner_chvron{
+  padding:1.5rem;
+  text-align:center;
+}
+.abt-banner .abt-banner_chvron a i{
+  text-align:center;
+  color:var(--primary);
+  font-size: 5rem;
+}
+
 
 @media screen and (max-width:500px){
-  .banner .banner_wrapper{
+  .abt-banner .abt-banner_wrapper{
     display:flex;
     flex-direction:column-reverse;
   }
-  .banner img{
+  .abt-banner img{
     width:20rem;
+    margin-bottom: 5rem;
   }
-  .banner .banner_text {
+  .abt-banner .abt-banner_text {
     text-align:center;
   }
-  .banner .banner_text h1{
+  .abt-banner .abt-banner_text h1{
     font-size:3rem;
     margin-top:5rem;
   }
-}
+  .abt-banner .abt-banner_text h3{
+    /* padding-right:24rem; */
+  }
+  .abt-banner .abt-banner_chvron{
+    padding:1.5rem;
+    text-align:center;
+    margin-top: 3rem;
+  }
+  .abt-banner .abt-banner_chvron a i{
+    text-align:center;
+    color:var(--primary);
+    font-size: 4rem;
 
+  }
+
+}
 /* RCNT-TRENDS */
 .rcnt-trends{
   background:var(--dark);
@@ -581,6 +570,7 @@ font-weight:600;
   color:var(--light);
   font-size: 2.5rem;
   font-weight:400rem;
+  margin: 2rem 0;
 }
 .rcnt-trends .rcnt-trends_wrapper{
   margin-top:7rem;
@@ -611,6 +601,97 @@ font-weight:600;
 
 }
 
+@media screen and (max-width:500px){
+  .rcnt-trends .rcnt-trends_wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .rcnt-trends .rcnt-trends_title{
+    text-align: center;
+  }
+}
+
+/* SRVCS */
+
+.srvcs-banner{
+  background:var(--light);
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+
+.srvcs-banner .srvcs-banner_wrapper:nth-child(even){
+   display: flex;
+   max-width:140rem; 
+   margin:0 auto;
+   padding: 1.5rem; 
+   width: 100% ;
+   margin-top: 5rem;
+   justify-content: space-between;
+   background-color:var(--dark);
+   flex-direction:row-reverse;
+   
+  }
+  .srvcs-banner .srvcs-banner_wrapper:nth-child(odd){
+    display: flex;
+    max-width:140rem; 
+    margin:0 auto;
+    padding: 1.5rem; 
+    width: 100% ;
+    margin-top: 5rem;
+    justify-content: space-between;
+    background-color: var(--light);
+  }
+
+  
+
+.srvcs .srvcs-banner_text{
+  display:flex;
+  flex-direction:column;
+  /* align-items:center; */
+}
+
+.srvcs-banner .srvcs-info h1{
+  color:var(--primary);
+  font-size:4.9rem;
+  font-weight:800;
+  line-height:1;
+  /* margin-top: 4rem; */
+}
+.srvcs-banner .srvcs-info p{
+  margin:5rem 0;
+  max-width:40rem;
+  text-align:justify;
+}
+.srvcs-banner .srvcs-banner_chvron{
+  padding:1.5rem;
+  text-align:center;
+}
+.srvcs-banner .srvcs-banner_chvron a i{
+  text-align:center;
+  color:var(--primary);
+  font-size: 5rem;
+}
+
+.srvcs-banner .srvcs-price p:first-child{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.srvcs-banner .srvcs-price p:nth-child(2){
+  font-size: 3rem;
+  color: var(--primary);
+}
+.srvcs-banner .srvcs-price p:nth-child(3){
+  font-size: 1rem;
+  font-style: italic;
+  
+}
+.srvcs-banner .srvcs-price p:last-child{
+  font-size: 1rem;
+  font-style: italic;
+  
+}
 
 
 
