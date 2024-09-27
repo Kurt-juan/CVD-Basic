@@ -830,7 +830,31 @@ width: 7rem;
 }
 
 
-
+@media screen and (max-width:500px){
+  .contact .contact_wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    padding: 0 4rem;
+  }
+  .contact h1{
+    padding-top: 15rem;
+    text-align: center;
+  }
+  .contact .contact_text p{
+    padding:3rem 0;
+    text-align: center;
+  }
+  .contact ul.contact_social{
+    justify-content: center;
+  }
+  .contact form .contact_btn{
+    text-align: center;
+  }
+  .contact form .contact_btn a{
+    width: 100%;
+  }
+}
 
 
 
